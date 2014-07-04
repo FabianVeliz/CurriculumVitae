@@ -1,0 +1,37 @@
+/* Media Queries */
+
+/* Desktop first */
+media(num)
+	condition = 'screen and (max-width: %s)' % num
+	@media condition
+		{block}
+
+
+media2(num,numb)
+	condition = 'screen and (min-width: '+num+') and (max-width: '+numb+')'
+	@media condition
+		{block}
+
+
+/* Mobile first*/
+media3(num)
+	condition = 'screen and (min-width: %s)' % num
+	@media condition
+		{block}
+
+
+/* Variables */
+
+l1Min=200px
+l1Max=460px
+
+l2Min=460px
+l2Max=550px
+
+l-middle = 640px
+
+l3Min=551px
+l3Max=759px
+
+l4Min=760px
+l4Max=989px
