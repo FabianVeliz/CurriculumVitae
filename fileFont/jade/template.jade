@@ -10,12 +10,12 @@ html(lang="en")
 		link(href='stylesheet/all.css',rel='stylesheet',type='text/css')
 
 	body
+		.containerPage
+			include _header
 
-		include _header
+			block content
 
-		block content
-
-		include _footer
+			include _footer
 
 		script(src="js/vendor/jquery.js")
 		script(src="js/all.js")

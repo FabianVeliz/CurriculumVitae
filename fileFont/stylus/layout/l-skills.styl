@@ -1,0 +1,106 @@
+.l-skills
+
+	ul
+		margin-top 10px
+
+		li
+			margin-bottom 10px
+			box-shadow 0 2px 5px rgba(0, 0, 0, 0.26)
+
+			.skill
+				position relative
+				background #ff8a65
+				width 100%
+				display block
+				border-radius 3px
+				overflow hidden
+
+				span
+					font-size 1.4em
+					color #fff
+					display inline-block
+					padding 7px 10px
+					position relative
+					z-index 22
+
+
+				.rank
+					position absolute
+					top 0
+					left 0
+					bottom 0
+					width 80%
+					background #ff7043
+
+
+
+					&:before
+						content ""
+						width 0
+						height 0
+						border-bottom 28px solid rgba(0, 0, 0, 0)
+						border-left-width 15px
+						border-left-style solid
+						border-left-color #ff7043
+
+						top 0
+						left 100%
+						position absolute
+
+			&.colorCss3
+				.skill
+					background #4fc3f7
+
+					.rank
+						background #03a9f4
+
+						&:before
+							border-left-color #03a9f4
+
+			&.colorJquery
+				.skill
+					background #7986cb
+
+					.rank
+						background #4B3B80
+
+						&:before
+							border-left-color #4B3B80
+
+			&.colorResponsive
+				.skill
+					background #f36c60
+
+					.rank
+						background #e51c23
+
+						&:before
+							border-left-color #e51c23
+
+			&.colorJavascript
+				.skill
+					background #aed581
+
+					.rank
+						background #8bc34a
+
+						&:before
+							border-left-color #8bc34a
+
+
+			&.colorPhp
+				.skill
+					background #7986cb
+
+					.rank
+						background #3f51b5
+
+
+						&:before
+							border-left-color #3f51b5
+
+
+
+
+
+

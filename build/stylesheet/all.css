@@ -293,7 +293,8 @@ h5,
 h6,
 ul,
 li,
-p {
+p,
+span {
   margin: 0;
   padding: 0;
   line-height: 1em;
@@ -306,7 +307,8 @@ a {
   text-decoration: none;
 }
 a,
-img {
+img,
+span {
   display: block;
 }
 html,
@@ -323,14 +325,105 @@ body {
   margin: 55px 0 30px;
 }
 .l-main .description {
-  margin-top: 15px;
-  font-size: 1.6em;
+  margin-top: 10px;
+  font-size: 1.4em;
   color: #9e9e9e;
-  font-weight: 300;
 }
 .l-main .description p {
-  font-weight: 300;
   line-height: 1.3em;
+}
+.l-skills ul {
+  margin-top: 10px;
+}
+.l-skills ul li {
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+.l-skills ul li .skill {
+  position: relative;
+  background: #ff8a65;
+  width: 100%;
+  display: block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.l-skills ul li .skill span {
+  font-size: 1.4em;
+  color: #fff;
+  display: inline-block;
+  padding: 7px 10px;
+  position: relative;
+  z-index: 22;
+}
+.l-skills ul li .skill .rank {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  background: #ff7043;
+}
+.l-skills ul li .skill .rank:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 28px solid rgba(0,0,0,0);
+  border-left-width: 15px;
+  border-left-style: solid;
+  border-left-color: #ff7043;
+  top: 0;
+  left: 100%;
+  position: absolute;
+}
+.l-skills ul li.colorCss3 .skill {
+  background: #4fc3f7;
+}
+.l-skills ul li.colorCss3 .skill .rank {
+  background: #03a9f4;
+}
+.l-skills ul li.colorCss3 .skill .rank:before {
+  border-left-color: #03a9f4;
+}
+.l-skills ul li.colorJquery .skill {
+  background: #7986cb;
+}
+.l-skills ul li.colorJquery .skill .rank {
+  background: #4b3b80;
+}
+.l-skills ul li.colorJquery .skill .rank:before {
+  border-left-color: #4b3b80;
+}
+.l-skills ul li.colorResponsive .skill {
+  background: #f36c60;
+}
+.l-skills ul li.colorResponsive .skill .rank {
+  background: #e51c23;
+}
+.l-skills ul li.colorResponsive .skill .rank:before {
+  border-left-color: #e51c23;
+}
+.l-skills ul li.colorJavascript .skill {
+  background: #aed581;
+}
+.l-skills ul li.colorJavascript .skill .rank {
+  background: #8bc34a;
+}
+.l-skills ul li.colorJavascript .skill .rank:before {
+  border-left-color: #8bc34a;
+}
+.l-skills ul li.colorPhp .skill {
+  background: #7986cb;
+}
+.l-skills ul li.colorPhp .skill .rank {
+  background: #3f51b5;
+}
+.l-skills ul li.colorPhp .skill .rank:before {
+  border-left-color: #3f51b5;
+}
+.l-experience {
+  margin: 30px 0 20px;
 }
 /* Import module */
 header {
@@ -393,11 +486,8 @@ footer {
 }
 .title {
   display: inline-block;
-  background: #fff;
-  padding: 0 35px 5px 0;
-  color: #757575;
-  font-size: 2em;
-  border-bottom: 1px solid #757575;
+  color: #424242;
+  font-size: 2.4em;
 }
 /* Import theme */
 /*@import 'theme/theme'*/
