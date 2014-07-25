@@ -520,43 +520,46 @@ body {
 /* Import module */
 header {
   background: #00bcd4;
-  text-align: right;
-  position: relative;
   -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  position: relative;
 }
-header .absolute {
-  position: absolute;
-  top: 10px;
-  padding-left: 80px;
+header .presentation {
+  padding: 10px 0;
 }
-header .absolute figure {
-  height: 70px;
-  width: 70px;
-  -webkit-border-radius: 70px;
-  border-radius: 70px;
+header .presentation figure {
+  height: 75px;
+  width: 75px;
+  -webkit-border-radius: 75px;
+  border-radius: 75px;
   overflow: hidden;
   -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
-header .absolute figure img {
+header .presentation figure img {
   width: 100%;
 }
-header .absolute hgroup {
+header .presentation hgroup {
   text-align: left;
-  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }
-header .absolute hgroup h1 {
-  font-size: 2.4em;
+header .presentation hgroup h1 {
+  font-size: 2.2em;
   color: #fff;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
-header .absolute hgroup h2 {
-  font-size: 1.8em;
-  color: #00bcd4;
+header .presentation hgroup h2 {
+  font-size: 1.6em;
+  color: #eee;
+}
+header ul {
+  position: absolute;
+  top: 0;
+  right: 15px;
 }
 header ul li {
   display: inline-block;
@@ -564,13 +567,26 @@ header ul li {
 }
 header ul li a {
   color: #005d69;
-  padding: 15px;
+  padding: 37px 15px 38px;
   font-size: 2em;
+}
+header .language ul {
+  top: 100%;
+  right: 15px;
+}
+header .language ul li {
+  width: 40px;
+  display: block;
+}
+header .language ul li img {
+  height: 100%;
+  width: 100%;
 }
 footer {
   background: #f1f1f1;
 }
 .container {
+  position: relative;
   margin: 0 auto;
   width: 100%;
   max-width: 1100px;
